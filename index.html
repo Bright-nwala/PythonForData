@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PYTHON_FOR_DATA</title>
+  <link rel="stylesheet" href="style.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PythonForData - Python Tutorial for Data Science, Data Analysis, Machine Learning and AI</title>  <!-- More descriptive title -->
-    <meta name="description" content="Stay updated with the latest AI news, trends, and breakthroughs. Explore in-depth articles, videos, and analysis on artificial intelligence."> <!-- Meta description -->
-    <meta name="keywords" content="AI, Artificial Intelligence, Machine Learning, Deep Learning, AI News, AI Trends, AI Research">  <!-- Meta keywords -->
+    <title>PythonForData - Python Tutorial for Data Science, Data Analysis, Machine Learning and AI</title>
+    <meta name="description" content="Stay updated with the latest AI news, trends, and breakthroughs. Explore in-depth articles, videos, and analysis on artificial intelligence.">
+    <meta name="keywords" content="AI, Artificial Intelligence, Machine Learning, Deep Learning, AI News, AI Trends, AI Research">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <h1>PythonForData</h1>
 
+    <section>
+      <label for="imageUpload">Upload Image:</label>
+      <input type="file" id="imageUpload" accept="image/*"/>
+      <div class="preview">
+        <img id="imagePreview" src="" alt="Image preview"/>
+      </div>
+    </section>
+
+    <section>
+      <label for="videoUpload">Upload Video:</label>
+      <input type="file" id="videoUpload" accept="video/*"/>
+      <div class="preview">
+        <video id="videoPreview" controls></video>
+      </div>
     <header>
         <nav>
             <h1>PythonForData</h1>
@@ -22,15 +42,42 @@
     </header>
 
     <section id="banner">
-        <img src="banner.jpg" alt="AI Banner">
+        <img src="PythonForData Banne.png" alt="AI Banner">
     </section>
+  </div>
 
+  <script src="script.js"></script>
     <main>
+        <!-- Existing AI Article -->
         <article>
-            <h2>Exciting Developments in AI</h2>
+            <h2>Python Programming Language: Relevance Today and in the Future</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               Python is one of the most popular and versatile programming languages in the world. 
+                Known for its simplicity and readability,
+                it has become a favorite among beginners and professionals alike. Its clean syntax makes it easy to learn, 
+                while its vast ecosystem of libraries and frameworks makes it powerful enough for advanced applications.
             </p>
+
+             <p>
+               Today, Python is at the heart of many fields. It powers data science, machine learning, 
+                 and artificial intelligence projects, enabling researchers and businesses to extract insights 
+                 from big data and build intelligent systems. In web development,
+                 frameworks like Django and Flask make building robust applications straightforward. 
+                 Python is also widely used in automation, scripting, cybersecurity, finance, and scientific research,
+                 proving its adaptability across industries.
+            </p>
+
+             <p>
+              Looking ahead, Python’s relevance is expected to grow. As AI, data analytics, 
+                 and cloud computing continue to shape the future of technology, 
+                 Python’s ecosystem will only expand. Its active community ensures continuous improvement,
+                 while its ability to integrate with emerging technologies makes it future-proof.
+            </p>
+
+            <p>In short, Python is not just a programming language—
+                it is a tool driving innovation today and shaping the digital landscape of tomorrow
+            </p>
+
 
             <div class="social-share">
                 <a href="#" class="social-icon"><img src="facebook.png" alt="Facebook"></a>
@@ -38,43 +85,97 @@
                 <a href="#" class="social-icon"><img src="linkedin.png" alt="LinkedIn"></a>
             </div>
 
-            <div class="article-media">
-                <video width="560" height="315" controls>
-                    <source src="ai_video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <img src="article_image.jpg" alt="Article Image">
-            </div>
+           <div class="article-media">
+    <!-- YouTube Embed -->
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/watch?v=kKt8_vIj6zI" 
+        title="Super Simple, Beginner-Friendly Python for Data Science part 3" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+    <!-- Optional article image -->
+    <img src="PythonForData propix.png" alt="Article Image">
+</div>
 
             <p>
-               Further insights and analysis on the topic... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Further insights and analysis on the topic...
             </p>
+        </article>
+
+        <!-- NEW PYTHON TUTORIAL SECTION -->
+        <article id="python-tutorial">
+            <h2>🐍 Python Tutorial for Beginners – AI PULSE Edition</h2>
+            <p>Learn Python step by step for Data Science, Machine Learning, and AI. This tutorial covers variables, data types, lists, loops, functions, and essential libraries like NumPy and Pandas.</p>
+
+            <h3>1. Introduction to Python</h3>
+            <p>Python is popular because it’s simple, versatile, and widely used in AI, web apps, and data science.</p>
+
+            <h3>2. Variables</h3>
+<pre><code>name = "Alice"
+age = 25
+height = 1.68
+is_student = True</code></pre>
+
+            <h3>3. Operators</h3>
+<pre><code>x = 10
+y = 3
+print(x + y)  # 13
+print(x * y)  # 30</code></pre>
+
+            <h3>4. Lists</h3>
+<pre><code>fruits = ["apple","banana","cherry"]
+fruits.append("mango")
+print(fruits)</code></pre>
+
+            <h3>5. Conditionals</h3>
+<pre><code>num = 7
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")</code></pre>
+
+            <h3>6. Loops</h3>
+<pre><code>for i in range(5):
+    print(i)</code></pre>
+
+            <h3>7. Functions</h3>
+<pre><code>def greet(name):
+    return f"Hello, {name}!"
+print(greet("Alice"))</code></pre>
+
+            <h3>8. NumPy and Pandas</h3>
+<pre><code>import numpy as np, pandas as pd
+arr = np.array([1,2,3,4])
+print(arr.mean())
+
+df = pd.DataFrame({"Name":["Alice","Bob"],"Age":[25,30]})
+print(df)</code></pre>
+
+            <p><b>Conclusion:</b> You now know the basics of Python for Data Science! Next step: learn Pandas for data cleaning and Matplotlib for visualization.</p>
         </article>
 
         <!-- Comment Section -->
         <section id="comments">
             <h3>Comments</h3>
-            <div id="comment-list">
-                <!-- Comments will be dynamically added here -->
-            </div>
-
+            <div id="comment-list"></div>
             <h4>Leave a Comment:</h4>
             <form id="comment-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
-
                 <label for="comment">Comment:</label>
                 <textarea id="comment" name="comment" rows="4" required></textarea><br><br>
-
                 <button type="submit">Post Comment</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 AI PULSE</p>
+        <p>&copy; 2025 pythonForData</p>
     </footer>
 
-    <script src="script.js"></script>  <!-- Make sure script.js is included -->
+    <script src="script.js"></script>
 </body>
 </html>
+
